@@ -7,6 +7,10 @@ def helloWelcome():
 	
 	if(name == "Suresh"): 
 		print("Hello Suresh you are great,",firstQ)
+	elif(name == "Ramesh"):
+		print("Hello Ramesh you are a great learner,",firstQ)
+	elif(name == "Bhala"):
+		print("Hello Bhala good to see you, appreciate your interest to learn Python,",firstQ)
 	else:
 		print("Hello",name,firstQ)
 		
@@ -54,5 +58,4 @@ def main():
 	helloWelcome()
 	print("*****************************************")
 	
-				
 main()
