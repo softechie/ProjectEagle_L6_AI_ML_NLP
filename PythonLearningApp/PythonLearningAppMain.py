@@ -1,5 +1,5 @@
 def helloWelcome():
-	welcomeMessage = "Welcome to the world of Python Learning !!! What is your name ?"
+	welcomeMessage = "Welcome to the world of Python Learning !!! I am ""Flexi"" What is your name ?"
 	print(welcomeMessage)
 	name = input()
 	firstQ = "how can I help you ?"
@@ -49,10 +49,17 @@ def add(n1,n2):
 def subtract(n1,n2):
 	print(n1,"-",n2)	
 	return n1-n2
-	
+
 def main():	
 	helloWelcome()
 	print("*****************************************")
-	
-				
+		
 main()
+
+## Flask API enablemenet to handle the Http request and respond back
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")	
+def flaskHandler():
+	return "Welcome to Flask - Your request is handled by the PythonLearningApp-Chatbot. To get more interactive with chatbot run the program on command line mode"
+	
