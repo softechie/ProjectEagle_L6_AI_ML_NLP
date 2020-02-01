@@ -6,7 +6,6 @@ Created on Thu Dec 26 12:59:38 2019
 """
 
 from flask import Flask, render_template, request, redirect
-from vsearch import search4letters
 import requests
 
 app = Flask(__name__)
